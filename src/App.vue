@@ -1,28 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <new-sponsorship-page></new-sponsorship-page>
+    <portal-target name="modals" multiple></portal-target>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NewSponsorshipPage from '@/components/NewSponsorshipPage'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+      NewSponsorshipPage,
+  },
+  
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
